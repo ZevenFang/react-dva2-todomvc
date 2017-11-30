@@ -6,6 +6,9 @@
     "lint": "eslint --ext .js src test",
     "precommit": "npm run lint"
   },
+  "pre-commit": [
+    "precommit"
+  ],
   "engines": {
     "install-node": "6.11.1"
   },
@@ -26,6 +29,7 @@
     "eslint-plugin-react": "^6.8.0",
     "expect": "^1.20.2",
     "husky": "^0.12.0",
+    "pre-commit": "^1.2.2",
     "redbox-react": "^1.4.3",
     "roadhog": "^1.2.1"
   }
