@@ -9,6 +9,7 @@ script:
   - npm run build  #生成
 
 after_script:
+  - cp CNAME ./dist
   - cd ./dist
   - git init
   - git config user.name "Zeven"  #修改name
