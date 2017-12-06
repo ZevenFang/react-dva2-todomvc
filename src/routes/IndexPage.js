@@ -5,6 +5,7 @@ import Footer from '../components/layout/Footer';
 import TodoItem from '../components/TodoItem';
 import styles from './IndexPage.css';
 
+@connect(({ todo }) => ({ todo }))
 class IndexPage extends Component {
 
   constructor(props) {
@@ -112,4 +113,4 @@ class IndexPage extends Component {
 IndexPage.propTypes = {
 };
 
-export default connect(({ todo }) => ({ todo }))(IndexPage);
+export default IndexPage;
